@@ -1,0 +1,24 @@
+/* FILEPATH: /C:/Users/theer/OneDrive - Khon Kaen University/Desktop/GitHub/casixx.github.io-casix/assets/bootstrap/assets/brand/logo.css */
+
+.logo {
+  /* Common styles for both light and dark mode */
+  /* Add your common styles here */
+
+  /* BEGIN: Dark mode */
+  @media (prefers-color-scheme: dark) {
+    .logo {
+      background-image: url('../brand/logo_white.svg');
+      /* Add your dark mode specific styles here */
+    }
+  }
+  /* END: Dark mode */
+
+  /* BEGIN: Light mode */
+  @media (prefers-color-scheme: light) {
+    .logo {
+      background-image: url('../brand/logo_dark.svg');
+      /* Add your light mode specific styles here */
+    }
+  }
+  /* END: Light mode */
+}
