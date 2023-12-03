@@ -73,19 +73,19 @@
       }
 
       .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
+        --bd-violet-bg: rgb(76, 76, 76);
         --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
         --bs-btn-font-weight: 600;
         --bs-btn-color: var(--bs-white);
         --bs-btn-bg: var(--bd-violet-bg);
         --bs-btn-border-color: var(--bd-violet-bg);
         --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-hover-bg: #4e4e4e;
+        --bs-btn-hover-border-color: #5c5c5c;
         --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
+        --bs-btn-active-bg: #5e5e5e;
+        --bs-btn-active-border-color: #636363;
       }
 
       .bd-mode-toggle {
@@ -157,13 +157,16 @@
 <main class="form-signin w-100 m-auto">
   <form>
     
-    <td><img class="col align-self-center" src="../assets/brand/logo_dark.svg" alt="center" width="200" height="200"
-      border="0"
-      style="display: flex;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;"
-    ></td>
+
+    <script> 
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.write('<img class="prefers-color-scheme" src="../assets/brand/logo_white.svg" alt="center" width="200" height="200" border="0" style="display: flex; justify-content: center; margin-left: auto; margin-right: auto;">');
+      } 
+      else {
+        document.write('<img class="prefers-color-scheme" src="../assets/brand/logo_dark.svg" alt="center" width="200" height="200" border="0" style="display: flex; justify-content: center; margin-left: auto; margin-right: auto;">');
+      }
+      
+    </script>
 
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
     <div class="form-floating">
@@ -180,21 +183,19 @@
         Remember me
       </label>
     </div>
-    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+    <button class="btn btn-primary w-30 py-2 " type="submit">Sign in</button>
+    <button class="btn btn-primary w-30 py-2 " type="submit">Sign up</button>
   </form>
 </main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<script>
-
-    function login(){
-        window.location.href = "home.html";
-    }
-
-</script>
+</div>
 
 
 
     </body>
 </html>
+
+
+

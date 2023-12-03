@@ -1,19 +1,17 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en" class="h-100" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="HTML5 website template">
-    <meta name="keywords" content="CASIX, template, html, sass, jquery">
-    <meta name="author" content="CASIX">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Signin</title>
-    <link rel="ix-icon" type="image/png" href="../assets/brand/logo_dark.svg">
-    <link rel="shortcut icon" type="image/png" href="../assets/brand/logo_dark.svg">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+    <title>Sticky Footer Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer/">
+
+    
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
@@ -75,6 +73,7 @@
       .btn-bd-primary {
         --bd-violet-bg: #712cf9;
         --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
         --bs-btn-font-weight: 600;
         --bs-btn-color: var(--bs-white);
         --bs-btn-bg: var(--bd-violet-bg);
@@ -99,9 +98,9 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="sign-in.css" rel="stylesheet">
+    <link href="sticky-footer.css" rel="stylesheet">
   </head>
-  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+  <body class="d-flex flex-column h-100">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -154,47 +153,21 @@
     </div>
 
     
-<main class="form-signin w-100 m-auto">
-  <form>
-    
-    <td><img class="col align-self-center" src="../assets/brand/logo_dark.svg" alt="center" width="200" height="200"
-      border="0"
-      style="display: flex;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;"
-    ></td>
-
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-    <div class="form-check text-start my-3">
-      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Remember me
-      </label>
-    </div>
-    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-  </form>
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <h1 class="mt-5">Sticky footer</h1>
+    <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+    <p>Use <a href="../examples/sticky-footer-navbar/">the sticky footer with a fixed navbar</a> if need be, too.</p>
+  </div>
 </main>
+
+<footer class="footer mt-auto py-3 bg-body-tertiary">
+  <div class="container">
+    <span class="text-body-secondary">Place sticky footer content here.</span>
+  </div>
+</footer>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<script>
-
-    function login(){
-        window.location.href = "home.html";
-    }
-
-</script>
-
-
 
     </body>
 </html>
